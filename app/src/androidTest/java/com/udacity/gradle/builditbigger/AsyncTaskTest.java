@@ -24,7 +24,7 @@ public class AsyncTaskTest {
         AsyncTaskJoke asyncTaskJoke = new AsyncTaskJoke();
         asyncTaskJoke.execute(ActivityRule.getActivity());
         String joke = asyncTaskJoke.get();
-        assertFalse(joke.isEmpty());
         assertNotNull(joke);
+        assertFalse(joke.isEmpty());
     }
 }
